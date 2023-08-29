@@ -1,0 +1,97 @@
+$color-primary: #4682A9;
+$color-secondary: #4e4e4e;
+
+$color-text: #4e4e4e;
+$color-text-secondary: #000;
+
+$color-bg: #F6F4EB;
+
+
+.header{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-div, .button-div{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo-div{
+        justify-content: flex-start;
+
+        h1{
+            margin: 0;
+            font-size: 36px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+        }
+    }
+    .button-div{
+        justify-content: flex-end;
+
+        button{
+            width: 140px;
+            height: 40px;
+        }
+    }
+}
+
+.nav {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        padding: 0;
+
+        li{
+            list-style: none;
+            font-size: 18px;
+            font-weight: 400;
+
+            cursor: pointer;
+
+            &:hover{
+                font-weight: 600;
+                color: $color-primary;
+            }
+        }
+    }
+
+    .ul-left{
+        justify-content: flex-start;
+        
+        li{
+            margin-right: 20px;
+        }
+    }
+    .ul-right{
+        justify-content: flex-end;
+
+        li{
+            margin-left: 20px;
+        }
+    }
+
+
+    border: 2px solid #4e4e4e;
+    border-left: none;
+    border-right: none;
+}

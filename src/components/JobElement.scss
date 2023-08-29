@@ -1,0 +1,78 @@
+// Variables
+$color-primary: #4682A9;
+$color-secondary: #4e4e4e;
+
+$color-text: #4e4e4e;
+$color-text-secondary: #000;
+
+$color-bg: #F6F4EB;
+
+
+.job-element{
+    width: 100%;
+    height: 140px;
+
+    margin: 10px 0;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .job-element-left, .job-element-right{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #fff;
+    }
+
+    .job-element-left{
+        width: calc(10% - 10px);
+        border-radius: 10px 0 0 10px;
+
+        h3{
+            font-size: 24px;
+            font-weight: 600;
+        }
+    }
+    .job-element-details{
+        width: calc(65% - 10px);
+        text-align: left;
+
+        h4{
+            font-size: 18px;
+            font-weight: 500;
+            margin: 15px 0;
+
+            span {
+                font-weight: 400;
+            }
+        }
+    }
+    .job-element-right{
+        width: calc(20% - 10px);
+        text-align: right;
+        border-radius: 0 10px 10px 0;
+
+        a{
+            text-decoration: none;
+            font-size: 24px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 400;
+
+            color: $color-primary;
+        }
+
+        a:hover{
+            font-weight: 500;
+        }
+    }
+
+    border : 4px solid #fff;
+    background-color: $color-bg;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px 0px rgba(31, 31, 31, 0.05);
+}
